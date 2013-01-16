@@ -1,4 +1,5 @@
 *.o
+*.so
 cscope.*
 ctags
 .DS_Store
@@ -13,3 +14,6 @@ tags
 *.log
 *.dvi
 *.mode*v*
+
+tmp-build
+*.d

@@ -41,3 +41,8 @@
 	safecrlf = true
 [push]
 	default = matching
+[user]
+	name = Matt Dordal
+	email = matt@dordal.org
+[merge]
+	tool = vimdiff

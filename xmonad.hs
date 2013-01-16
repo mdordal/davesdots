@@ -51,6 +51,7 @@ main = do
 				, ppTitle  = xmobarColor "#8AE234" ""
 				}
 			, terminal = "xterm"
+			, modMask = mod4Mask
 			}
 			`additionalKeysP`
 			[ ("M-p", shellPrompt defaultXPConfig { position = Top })
