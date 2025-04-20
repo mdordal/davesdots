@@ -47,7 +47,6 @@ set visualbell             " Turn visual bell on
 set t_vb=                  " Make the visual bell emit nothing
 set showcmd                " Show the current command
 
-set diffopt+=iwhite
 
 " ---- Filetypes ----
 if has('syntax')
@@ -386,6 +385,10 @@ if v:version >= 700
    map <C-F12> :!$HOME/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
    " add current directory's generated tags file to available tags
    set tags+=./tags
+endif
+
+if has("gui_vimr")
+	source ~/.config/nvim/ginit.vim
 endif
 
 set t_RV=
